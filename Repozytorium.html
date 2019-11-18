@@ -7,30 +7,42 @@
     <title>Repozytorium</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,600,700,800&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <header class="header">
+            <div class="width__container">
         <div class="header-logo">
             <a href="" class="logo-link">BestShop</a>
         </div>
         <nav class="nav">
-            <ul class="nav-ul">
-                <li class="li4"><a href="" class="li-link">WHY US</a></li>
+
+            <div class="hamburger">
+                <svg viewBox="0 0 800 600">
+                    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+                    <path d="M300,320 L540,320" id="middle"></path>
+                    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                </svg>
+            </div>
+
+            <ul class="nav-ul" style="display: none">
+                <li class="li4 li4-first"><a href="" class="li-link">WHY US</a></li>
                 <li class="li4"><a href="" class="li-link">BENEFITS</a></li>
                 <li class="li4"><a href="" class="li-link">PRICES</a></li>
                 <li class="li4-last"><a href="" class="li-link">CONTACT</a></li>
             </ul>
         </nav>
+            </div>
         </header>
 
         <section class="section">
             <div class="section-container">
                 <div class="section-text">
                     <h1 class="section-title">Sell More</h1>
-                        <p class="section-p">Open shop on your platform and increse sales</p>
+                        <p class="section-p">Open shop on your platform and increase your sales</p>
                 </div>
                 <div class="section-button"><a href="" class="btn section-link--button">Open your shop</a></div>
                 <div class="image"> 
@@ -39,6 +51,7 @@
         </section>
 
         <article class="article">
+            <div class="width__article__container">
             <div class="article-container">
                 
                 <h2>The most popular sales platform in country</h2>
@@ -47,7 +60,7 @@
                 <div class="article-box1">
                  <div class="circlePerson-box">
                     <div class="box-person"><img src="assets/person.svg" alt="person" class="person"></div>
-                    <div class="circle1"></div>
+                    <div class="circle1 circle"></div>
                  </div>
                     <h3>100000+</h3>
                         <p>daily entries</p>
@@ -55,7 +68,7 @@
                 <div class="article-box2">
                     <div class="circleEye-box">
                         <div class="box-person"><img src="assets/eye.svg" alt="person" class="person"></div>
-                    <div class="circle2"></div>
+                    <div class="circle2 circle"></div>
                     </div>
                     <h3>2000000+</h3>
                         <p>seen products<br> every day</p>
@@ -63,15 +76,17 @@
                 <div class="article-box3">
                     <div class="circleFolder-box">
                         <div class="box-person"><img src="assets/catalog.svg" alt="person" class="person"></div>
-                        <div class="circle3"></div>
+                        <div class="circle3 circle"></div>
                     </div>
                     <h3>10000+</h3>
                         <p>added posts<br> daily</p>
                 </div>
             </div>
+            </div>
         </article>
 
         <section class="section2">
+            <div class="width__section__container">
             <div class="section2-box1">
                 <div class="section2-box1--box1">
                     <h2>Be allways first</h2>
@@ -111,54 +126,84 @@
                     <img src="assets/trumpet.png" alt="trumpet" class="trumpet">
                 </div>
             </div>
+            </div>
         </section>
     <section class="section3">
+        <div class="width__section__container price__container">
         <div class="pricing"><h2>Pricing</h2></div>
         <div class="section3__box__container">
-            <div class="section3__box1"><h3>Basic</h3>
-            <span class="dollars1 dollars">$0</span>
+            <div class="section3__box1"><div class="basic__container"><h3>Basic</h3>
+                <span class="dollars1 dollars">$0</span></div>
+                <div class="basic__container2">
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">100 MB HDD</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">1 Subdomain</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">2 E-mails</p>
                 <p><img src="assets/Close-red.svg" alt="checkbox" class="checkbox">Two years license</p>
                 <p><img src="assets/Close-red.svg" alt="checkbox" class="checkbox">Full support</p>
                 <div class="section-button"><a href="" class="buttons btn1">Begin</a></div>
+                </div>
             </div>
-            <div class="section3__box2"><h3>Proffesional</h3>
+            <div class="section3__box2"><div class="proffesional__container"><h3>Proffesional</h3>
                 <p class="dollars2 dollars">$25</p>
-                <span class="limited1">Limited offer</span>
+                <span class="limited1">Limited offer</span></div>
+                <div class="proffesional__container2">
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">500 MB HDD</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">2 Subdomain</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">5 E-mails</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">One year license</p>
                 <p><img src="assets/Close-red.svg" alt="checkbox" class="checkbox">Full support</p>
-                <div class="section-button"><a href="" class="buttons btn2">Begin</a></div>
+                <div class="section-button"><a href="" class="buttons btn2 blue__btn">Begin</a></div>
+                </div>
             </div>
-            <div class="section3__box3"><h3>Basic</h3>
+            <div class="section3__box3"><div class="basic__container"><h3>Premium</h3>
                 <p class="dollars3 dollars">$60</p>
-                <span class="limited2">Limited offer</span>
+                <span class="limited2">Limited offer</span></div>
+                <div class="basic__container2">
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">2 GB HDD</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">5 Subdomain</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">20 E-mails</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">Two years license</p>
                 <p><img src="assets/Ckechmark-green.svg" alt="checkbox" class="checkbox">Full support</p>
                 <div class="section-button"><a href="" class="buttons btn3">Begin</a></div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
         <section class="calculator">
+            <div class="width__section__container calc__container">
             <div class="title"><h2>Calculate how much you' ll pay</h2></div>
             <div class="calculator__container">
                 <div class="calc__numInputs">
                     <input id ='numOfProducts' class="firstInput" type="number" placeholder="Products quanity" min="0" max="9999">
                     <input id="numOfOrders" class="secondInput" type="number" placeholder="Estimated orders in month" min="0" max="9999">
-                    <select id="optionsOfPackages" class="select-css">
-                        <option value="" hidden selected>Choose package</option>
-                        <option value="1">Basic</option>
-                        <option value="2">Proffesional</option>
-                        <option value="3">Premium</option>
-                    </select>
+                        <div class="select">
+                            <div class="input2 select-css" id="optionsOfPackages">
+                            </div>
+                            <div class="select-options">
+                                <ul>
+                                    <li class="selected choose" value="0">
+                                        <span>Choose package</span>
+                                    </li>
+                                    <li value="1">
+                                        <span >Basic</span>
+                                    </li>
+                                    <li value="2">
+                                        <span>Proffesional</span>
+                                    </li>
+                                    <li value="3">
+                                        <span>Premium</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+<!--                    <select id="optionsOfPackages" class="select-css">-->
+<!--                        <option value="" hidden selected>Choose package</option>-->
+<!--                        <option value="1">Basic</option>-->
+<!--                        <option value="2">Proffesional</option>-->
+<!--                        <option value="3">Premium</option>-->
+<!--                    </select>-->
                     <input id="accountingInput" class="calc_checked1" type="checkbox"> <p>Accounting</p><br>
                     <input id="terminalInput" class="calc_checked2" type="checkbox"> <p>Rental of payment terminal</p>
                 </div>
@@ -192,9 +237,11 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
     <section class="section4">
+        <div class="width__section4__container">
         <div class="section4__box1">
             <h2>Any questions?</h2>
             <p>Leave your email adress or call us!</p>
@@ -218,6 +265,7 @@
             <a href="" class="btn4">Send</a>
             </div>
         </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__container">
@@ -239,7 +287,8 @@
 
 
 
-    </div>
+        </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/rep.js" type="text/javascript"></script>
 </html>

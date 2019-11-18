@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const doc = document;
     const packages = {
         'basic': 20,
-        'professional': 40,
+        'proffesional': 40,
         'premium': 60
     };
     const accountingPrice = 35;
@@ -113,4 +113,72 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         doc.getElementById('total').innerText = `$${total}`;
     }
+
+    $(function() {
+        if ($('.select-options ul li').hasClass('selected')) {
+            $('.select .input2').text($('.select-options li.selected > span:first-child').text());
+        } else {
+            $('.select .input2').text($('.select-options li:first-child > span:first-child').text());
+        }
+        $('.select').click(function() {
+            $('.select-options').find("ul li").eq(0).css("display", "none");
+            $('.select-options').toggleClass('visible');
+        });
+        $('.select-options li').click(function(event) {
+            const currentPackage = event.target.innerText.toLowerCase();
+            if($(this).hasClass('choose')){
+                $('.green__container3').css("display", "hidden");
+            }
+            else{
+                $('.green__container3').css("display", "flex");
+            showOrderComponentAfterAddValInInput(
+                0,
+                currentPackage,
+                doc.getElementById('package'),
+                doc.getElementById('selectedPackage'),
+                doc.getElementById('priceOfPackage'));
+
+            updateTotal('package', packages[currentPackage]);
+            $('.selected').removeClass('selected');
+            $(this).addClass('selected');
+            $('.select .input2').text($(this).find('span:first-child').text());
+            }
+        });
+    })
+
+    $( ".select-css" ).click(function() {
+        if (  $( this ).css( "background-image", "url('./assets/Arrow Down.svg')" )){
+            $(this).css("background-image","none");
+            $(this).css("background-image","url('./assets/Arrow Up.svg')");
+        } else if (  $( this ).css( "background-image", "url('./assets/Arrow Up.svg')" )){
+            $(this).css("background-image","none");
+            $(this).css("background-image","url('./assets/Arrow Down.svg')");
+        }
+    });
+
+    (function () {
+        var i, resize;
+
+
+
+        $(".hamburger").click(function () {
+            clearInterval(i);
+            return $(".hamburger").toggleClass("cross");
+        });
+    }).call(this);
+
+    $(".hamburger").on("click", function () {
+        $(".nav-ul").toggle();
+    })
+    // $( ".select-options .visible" ).on('change', function() {
+    //
+    //     if ($(this).css("display", "none")) {
+    //         console.log($(this));
+    //         $(".input2").css("background-image", "none");
+    //         $(".input2").css("background-image", "url('./assets/Arrow Down.svg')");
+    //     } else {
+    //         $(".input2").css("background-image", "none");
+    //         $(".input2").css("background-image", "url('./assets/Arrow Up.svg')");
+    //     }
+    // })
 });
